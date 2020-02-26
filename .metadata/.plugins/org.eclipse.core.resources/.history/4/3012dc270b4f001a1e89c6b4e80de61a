@@ -1,0 +1,29 @@
+package com.practical.spring.config;
+
+import org.omg.CORBA.Environment;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.context.annotation.ComponentScan;
+import org.springframework.context.annotation.Configuration;
+import org.springframework.context.annotation.PropertySource;
+
+import com.practical.spring.driver.DatabaseDrivers;
+import com.practical.spring.driver.OracleDriver;
+
+@Configuration
+@ComponentScan("com.practical.spring")
+@PropertySource("classpath:oracledatabase.properties")
+public class AppConfig {
+	
+	@Autowired
+	Environment enviroment;
+	
+	DatabaseDrivers oracleDriver() {
+		OracleDriver oracleDriver = new OracleDriver();
+		oracleDriver
+		
+		return null;
+		
+	}
+	
+
+}

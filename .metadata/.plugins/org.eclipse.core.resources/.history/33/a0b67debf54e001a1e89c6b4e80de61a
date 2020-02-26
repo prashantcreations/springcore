@@ -1,0 +1,10 @@
+package com.practical.spring.driver;
+
+public class OracleDriver implements DatabaseDrivers{
+
+	public String getInfo() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+}

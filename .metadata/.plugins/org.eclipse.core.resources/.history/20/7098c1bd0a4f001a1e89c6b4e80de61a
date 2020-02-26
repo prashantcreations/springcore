@@ -1,0 +1,23 @@
+package com.practical.spring.config;
+
+import org.springframework.context.annotation.ComponentScan;
+import org.springframework.context.annotation.Configuration;
+import org.springframework.context.annotation.PropertySource;
+
+import com.practical.spring.driver.DatabaseDrivers;
+import com.practical.spring.driver.OracleDriver;
+
+@Configuration
+@ComponentScan("com.practical.spring")
+@PropertySource("classpath:oracledatabase.properties")
+public class AppConfig {
+	
+	DatabaseDrivers oracleDriver() {
+		OracleDriver oracleDriver = new OracleDriver();
+		
+		return null;
+		
+	}
+	
+
+}

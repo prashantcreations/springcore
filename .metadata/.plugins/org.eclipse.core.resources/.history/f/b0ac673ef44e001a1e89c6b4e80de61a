@@ -1,0 +1,12 @@
+package com.practical.spring.driver;
+
+public class MySqlDriver implements DatabaseDrivers{
+	
+	private String databaseName;
+
+	public String getInfo() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+}

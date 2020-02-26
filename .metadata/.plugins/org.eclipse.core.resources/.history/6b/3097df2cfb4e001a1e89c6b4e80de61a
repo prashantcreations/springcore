@@ -1,0 +1,15 @@
+package com.practical.spring.driver;
+
+public class OracleDriver implements DatabaseDrivers{
+	
+	protected String url;
+	protected String user;
+	protected String password;
+	protected String driver;
+	protected Integer port;
+
+	public String getInfo() {
+		return null;
+	}
+
+}

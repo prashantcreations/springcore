@@ -1,0 +1,17 @@
+package com.practical.spring.driver;
+
+import org.springframework.context.annotation.PropertySource;
+import org.springframework.stereotype.Component;
+
+@Component
+@PropertySource("classpath:mysqldatabase.properties")
+public class MySqlDriver implements DatabaseDrivers{
+	
+	private String databaseName;
+	private String disableStatementPooling;
+
+	public String getInfo() {
+		return "[ driver : mysql"+", databasename : "+databaseName+
+				", disablestatementpooling : "+disableStatementPooling+" ]";
+	}
+}

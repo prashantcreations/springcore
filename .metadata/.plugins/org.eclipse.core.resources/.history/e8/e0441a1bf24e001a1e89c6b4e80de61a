@@ -1,0 +1,5 @@
+package com.practical.spring.model;
+
+public class Employee {
+
+}

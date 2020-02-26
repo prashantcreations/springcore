@@ -1,0 +1,18 @@
+package com.practical.spring.service;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
+
+import com.practical.spring.driver.DatabaseDrivers;
+
+@Service
+public class UserService {
+	
+	@Autowired
+	DatabaseDrivers dataBaseDriver;
+	
+	public String getDriverInfo() {
+		return null;
+	}
+
+}
